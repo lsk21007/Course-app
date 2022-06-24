@@ -6,7 +6,7 @@ import Facility from '../components/Home/Facility';
 import Cart from '../components/Cart/Cart';
 import Course from '../components/Course/Course';
 import { adBottom, companies } from '../utils/customComponents';
-import { Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 
 const mainApp = (
   <div className="app__body">
@@ -26,12 +26,14 @@ const mainApp = (
 function App() {
   return (
     <div className="app">
-      <Navbar />
-      <Switch>
-        <Route path="/cart"><Cart /></Route>
-        <Route path="/course/:courseId"><Course /></Route>
-        <Route exact path="/">{mainApp}</Route>
-      </Switch>
+      <HashRouter>
+        <Navbar />
+        <Switch>
+          <Route path="/cart"><Cart /></Route>
+          <Route path="/course/:courseId"><Course /></Route>
+          <Route exact path="/">{mainApp}</Route>
+        </Switch>
+      </HashRouter>
     </div>
   );
 }
