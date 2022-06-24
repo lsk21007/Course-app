@@ -1,6 +1,6 @@
 {
   "homepage": "http://lsk21007.github.io/Course-app/",
-  "name": "udemy-clone-redux",
+  "name": "Course-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
