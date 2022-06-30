@@ -29,9 +29,9 @@ function App() {
       <HashRouter>
         <Navbar />
         <Switch>
+          <Route exact path="/Course-app">{mainApp}</Route>
           <Route path="/cart"><Cart /></Route>
           <Route path="/course/:courseId"><Course /></Route>
-          <Route exact path="/">{mainApp}</Route>
         </Switch>
       </HashRouter>
     </div>
