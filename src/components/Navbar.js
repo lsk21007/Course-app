@@ -4,7 +4,7 @@ import { ReactComponent as Search } from '../images/logo/search.svg';
 import UdemyLogo from '../images/logo/udemy.svg';
 import './Navbar.scss';
 
-const Navbar = (props) => {
+const Navbar = () => {
   const submitHandler = (e) => {
     e.preventDefault();
   };
@@ -27,7 +27,9 @@ const Navbar = (props) => {
       </div>
       <div className="header__right">
         <div className="header__cart">
-          <CartSvg className="header__cartLogo" />
+          <Link to="/cart">
+            <CartSvg className="header__cartLogo" />
+          </Link>
           <span className="header__quantity">0</span>
         </div>
         <button className="header__btn header__login">Log in</button>

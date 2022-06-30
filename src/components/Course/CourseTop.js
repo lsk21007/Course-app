@@ -3,6 +3,7 @@ import { ReactComponent as WishList } from '../../images/logo/wishlist.svg';
 import { ReactComponent as Share } from '../../images/logo/share.svg';
 import CourseInfo from './CourseInfo';
 import './CourseTop.scss';
+
 const CourseTop = ({ data }) => {
   const { title, description, author, bestSeller, stars, ratings, language, noOfStudents } = data;
   return (
