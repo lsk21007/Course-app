@@ -4,6 +4,13 @@
   background-image: url(../../images/Banner1.jpg);
   height: 400px;
   background-repeat: no-repeat;
+  .banner__img{
+    position:absolute;
+    width: 30%;
+    z-index: 1;
+    left:450px;
+    top:200px
+  }
   @include center;
   margin-bottom: -0.2em;
   .banner__modal {

@@ -1,11 +1,21 @@
 @import "../../containers/base";
+
 .facility {
+  .facility__button {
+    background-color: $clr-header-btn;
+  }
+  .facility__button:hover {
+    background-color: $clr-header-btn-hover;
+  }
+
   @include grid;
   height: 20em;
   margin: 6em 0;
+
   .facility__data {
     @include flex;
     gap: 6em;
+
     img {
       margin-top: -2em;
       object-fit: contain;
@@ -13,6 +23,7 @@
       z-index: 10;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08), 0 4px 12px rgba(0, 0, 0, 0.08);
     }
+
     .facility__info {
       width: 400px;
       order: 1;

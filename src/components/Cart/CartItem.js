@@ -1,6 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
 import CourseInfo from "../Course/CourseInfo"
-import { TotalPrice } from "./TotalPrice";
 import './CartItem.scss'
 import { removeCourse } from "../../Redux/action/action";
 
@@ -25,12 +24,14 @@ const CartItem = () => {
               <CourseInfo className="courseInfo" bestSeller={i.bestSeller} stars={i.stars} ratings={i.ratings} />
             </div>
             <p className="cartItem__remove" style={{ cursor: "pointer" }} onClick={() => dispatch(removeCourse(i.id))}>Remove</p>
-            <p className="cartItem__price">
-              CA${Math.floor(i.currPrice * 0.016) + 0.99}
-            </p>
-          </div>
-          <div className="right">
-            <TotalPrice></TotalPrice>
+            <div>
+              <p className="cartItem__price">
+                CA${Math.floor(i.currPrice * 0.016) + 0.99}
+              </p>
+              <p className="cartItem__org">
+                CA${Math.floor(i.orgPrice * 0.016) + 0.99}
+              </p>
+            </div>
           </div>
         </div>
       })}

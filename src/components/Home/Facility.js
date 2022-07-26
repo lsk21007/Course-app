@@ -5,7 +5,7 @@ import './Facility.scss';
 
 const Facility = ({ instructor, buisness }) => {
   const Div = styled.div`
-    background: ${instructor ? '#fbfbf8' : '#003640'};
+    background: ${instructor ? '#fbfbf8' : '#D5D5D5'};
   `;
   const Button = styled.button`
     background: #0f7c90;
@@ -45,7 +45,7 @@ const Facility = ({ instructor, buisness }) => {
           Top instructors from around the world teach millions of students on Udemy. We provide the
           tools and skills to teach what you love.
         </Para>
-        <Button instructor>Start Teaching Today</Button>
+        <Button className='facility__button' instructor>Start Teaching Today</Button>
       </div>
     </>
   );
@@ -53,9 +53,9 @@ const Facility = ({ instructor, buisness }) => {
     <>
       <Img draggable={false} src={Buisness} alt="buisness" />
       <div className="facility__info">
-        <Title>Udemy for Business</Title>
-        <Para>Get unlimited access to 16,000+ of Udemy’s top courses for your team. Learn and improve skills across business, tech, design, and more.</Para>
-        <Button instructor>Get Udemy for Business</Button>
+        <Title style={{color:'black'}}>Udemy for Business</Title>
+        <Para style={{color:'black'}}>Get unlimited access to 16,000+ of Udemy’s top courses for your team. Learn and improve skills across business, tech, design, and more.</Para>
+        <Button className='facility__button' instructor>Get Udemy for Business</Button>
       </div>
     </>
   );

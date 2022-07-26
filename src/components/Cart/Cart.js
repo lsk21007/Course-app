@@ -1,6 +1,7 @@
 import { useSelector } from 'react-redux';
 import './Cart.scss';
 import CartItem from './CartItem';
+import { TotalPrice } from "./TotalPrice";
 
 const Cart = () => {
 
@@ -15,7 +16,14 @@ const Cart = () => {
         <div className="cart__items">
           <p>{state.length} Courses in Cart</p>
         </div>
-        <CartItem></CartItem>
+        <div style={{ display: 'flex' }}>
+          <div>
+            <CartItem></CartItem>
+          </div>
+          <div className="right">
+            <TotalPrice></TotalPrice>
+          </div>
+        </div>
       </div>
       <div className="cart__checkout"></div>
     </div>

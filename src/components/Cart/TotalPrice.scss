@@ -1,0 +1,34 @@
+@import "../../containers/base";
+
+.TotalPrice {
+    margin-left: 20px;
+    .curPrice{
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .orgPrice{
+        color: $clr-card-noBuys;
+        text-decoration: line-through;
+        font-size: 0.85rem;
+    }
+    p{
+        color: $clr-card-noBuys;
+        font-size: 0.85rem;
+    }
+    .button{
+        background: #aa05c7;
+        color: $clr-coursecard-button;
+        padding: 0.9em;
+        cursor: pointer;
+        border: none;
+        font-weight: 700;
+        font-size: 1rem;
+        border-radius: $br-btn;
+        border-radius: 0;
+        margin-top: 10px;
+        width: 250px;
+        &:hover {
+          background: #9901B4;
+        }
+    }
+}

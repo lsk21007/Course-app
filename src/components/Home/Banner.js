@@ -1,11 +1,15 @@
 import './Banner.scss';
+import { useState } from 'react';
+import img from "../../images/certificate.jpg"
 
 const Banner = () => {
+  const [show, setShow] = useState(false);
   return (
     <div className="banner">
-      <div className="banner__modal">
-        <h1>Dream up</h1>
-        <p>Ambition accepted. Learn the latest skills to reach your professional goals.</p>
+      {show && <img src={img} alt='certificate' className='banner__img'></img>}
+      <div onMouseEnter={() => setShow(true)} onMouseLeave={()=>setShow(false)} className="banner__modal">
+        <h1>My Certificate</h1>
+        <p>Hover to see my Udedmy WEB DEVELOPMENT BOOTCAMP Certificate.</p>
       </div>
     </div>
   );
