@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/Course-app/static/css/main.1707c86f.chunk.css",
-    "main.js": "/Course-app/static/js/main.484477ba.chunk.js",
-    "main.js.map": "/Course-app/static/js/main.484477ba.chunk.js.map",
+    "main.css": "/Course-app/static/css/main.7a2fb12a.chunk.css",
+    "main.js": "/Course-app/static/js/main.26ec62d4.chunk.js",
+    "main.js.map": "/Course-app/static/js/main.26ec62d4.chunk.js.map",
     "runtime-main.js": "/Course-app/static/js/runtime-main.71bb3cfb.js",
     "runtime-main.js.map": "/Course-app/static/js/runtime-main.71bb3cfb.js.map",
-    "static/js/2.039e9100.chunk.js": "/Course-app/static/js/2.039e9100.chunk.js",
-    "static/js/2.039e9100.chunk.js.map": "/Course-app/static/js/2.039e9100.chunk.js.map",
+    "static/js/2.8804172a.chunk.js": "/Course-app/static/js/2.8804172a.chunk.js",
+    "static/js/2.8804172a.chunk.js.map": "/Course-app/static/js/2.8804172a.chunk.js.map",
     "index.html": "/Course-app/index.html",
-    "static/css/main.1707c86f.chunk.css.map": "/Course-app/static/css/main.1707c86f.chunk.css.map",
-    "static/js/2.039e9100.chunk.js.LICENSE.txt": "/Course-app/static/js/2.039e9100.chunk.js.LICENSE.txt",
+    "static/css/main.7a2fb12a.chunk.css.map": "/Course-app/static/css/main.7a2fb12a.chunk.css.map",
+    "static/js/2.8804172a.chunk.js.LICENSE.txt": "/Course-app/static/js/2.8804172a.chunk.js.LICENSE.txt",
     "static/media/Article.a3be0f03.svg": "/Course-app/static/media/Article.a3be0f03.svg",
-    "static/media/Banner.scss": "/Course-app/static/media/Banner1.a4ec1f88.jpg",
+    "static/media/Banner.scss": "/Course-app/static/media/Banner1.c2de2463.jpg",
     "static/media/Download.4313da81.svg": "/Course-app/static/media/Download.4313da81.svg",
     "static/media/Mobile.ccf0ee30.svg": "/Course-app/static/media/Mobile.ccf0ee30.svg",
     "static/media/buisness.8ba8bae7.jpg": "/Course-app/static/media/buisness.8ba8bae7.jpg",
     "static/media/cart.8e7b8b35.svg": "/Course-app/static/media/cart.8e7b8b35.svg",
     "static/media/certificate.612be6d5.svg": "/Course-app/static/media/certificate.612be6d5.svg",
+    "static/media/certificate.794f2dc5.jpg": "/Course-app/static/media/certificate.794f2dc5.jpg",
     "static/media/instructor.c16c853e.jpg": "/Course-app/static/media/instructor.c16c853e.jpg",
     "static/media/lifetime.24ffb7c9.svg": "/Course-app/static/media/lifetime.24ffb7c9.svg",
     "static/media/search.fbdaf30a.svg": "/Course-app/static/media/search.fbdaf30a.svg",
@@ -32,8 +33,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.71bb3cfb.js",
-    "static/js/2.039e9100.chunk.js",
-    "static/css/main.1707c86f.chunk.css",
-    "static/js/main.484477ba.chunk.js"
+    "static/js/2.8804172a.chunk.js",
+    "static/css/main.7a2fb12a.chunk.css",
+    "static/js/main.26ec62d4.chunk.js"
   ]
 }
