@@ -1,9 +1,8 @@
 @import "../../containers/base";
 .cart {
   .cart__top {
-    background: $clr-cart-top-bg;
-    color: $clr-cart-top-text;
-    padding: $cart-padding;
+    color: black;
+    padding: $cart-padding 0 12em;
     h3 {
       font-size: 2.1rem;
       font-weight: normal;

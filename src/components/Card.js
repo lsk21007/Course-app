@@ -35,9 +35,9 @@ const Card = ({ data }) => {
         </p>
         <p className="card__price">
           <span className="card__currentPrice">
-            <strong>&#8377;{currPrice}</strong>
+            <strong>${Math.floor(currPrice*0.016)+0.99}</strong>
           </span>
-          <span className="card__originalPrice">&#8377;{orgPrice}</span>
+          <span className="card__originalPrice">${Math.floor(orgPrice*0.016)+0.99}</span>
         </p>
         {bestSeller ? <div className="bestSeller">Bestseller</div> : null}
       </div>

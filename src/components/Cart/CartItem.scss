@@ -1,0 +1,36 @@
+@import "../../containers/base";
+
+.cartItem {
+    display: flex;
+
+    .left {
+        display: flex;
+        border: 1px solid #D5D5D5;
+        padding: 10px;
+
+        .cartItem__course {
+            font-weight: bold;
+            width:450px
+        }
+
+        .cartItem__image {
+            width: 150px;
+            height: 90px;
+            margin-right: 10px
+        }
+
+        .cartItem__remove {
+            color: #B600D7;
+            padding:0 20px 0 20px
+        }
+
+        .cartItem__price {
+            color: #B600D7;
+            font-weight: bold
+        }
+    }
+
+    .courseInfo {
+        padding: 10px 0 5px 0;
+    }
+}

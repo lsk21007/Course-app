@@ -1,3 +1,4 @@
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { ReactComponent as CartSvg } from '../images/logo/cart.svg';
 import { ReactComponent as Search } from '../images/logo/search.svg';
@@ -8,6 +9,8 @@ const Navbar = () => {
   const submitHandler = (e) => {
     e.preventDefault();
   };
+
+  const state = useSelector(state => state.courseReducer);
 
   return (
     <header className="header">
@@ -30,7 +33,7 @@ const Navbar = () => {
           <Link to="/cart">
             <CartSvg className="header__cartLogo" />
           </Link>
-          <span className="header__quantity">0</span>
+          {state.length !== 0 && <span className="header__quantity">{state.length < 10 ? state.length : '9+'}</span>}
         </div>
         <button className="header__btn header__login">Log in</button>
         <button className="header__btn header__signup">Sign up</button>

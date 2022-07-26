@@ -1,6 +1,6 @@
 import './CourseInfo.scss';
 import '../../containers/sharedClasses.scss';
-const courseInfo = ({ bestSeller, stars, ratings, students }) => {
+const courseInfo = ({ bestSeller, stars, ratings }) => {
   return (
     <div className="courseInfo">
       {bestSeller && <div className="courseInfo__badge bestSeller">Bestseller</div>}
@@ -10,7 +10,6 @@ const courseInfo = ({ bestSeller, stars, ratings, students }) => {
           <span className="courseInfo__star">⭐</span>
         </strong>
         <span className="courseInfo__noBuys">({ratings} ratings)</span>
-        <span className="courseInfo__students">{students} students</span>
       </p>
     </div>
   );
